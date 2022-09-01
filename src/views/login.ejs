@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <%- include('partials/head') %> 
+    <body>
+        <%- include('partials/headerNavbar') %>
+        <article class="register">
+
+            <div class="registro">
+                <div>
+                    <p>¿Usuario Nuevo? ¡Regístrate!</p>
+                </div>
+                
+    
+                <form action="#" method="get">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="" id="nombre" placeholder="Juan">
+                    </div>
+                    
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="" id="apellido" placeholder="Pérez">
+                    </div>
+                    
+                    <div>
+                        <label for="correo">Correo:</label>
+                        <input type="email" name="" id="correo">
+                    </div>
+                    
+                    <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" name="" id="contrasena">
+                    </div>
+                    
+                    <div>
+                        <input type="submit" value="Registrarse">
+                    </div>
+                    
+    
+    
+                </form>
+    
+            </div>
+    
+            <div class="login">
+                <form action="">
+    
+                    <div>
+                        <p>¿Ya tienes cuenta? ¡Loguéate!</p>
+                    </div>
+                    
+                    <div>
+                        <label for="correo">Correo:</label>
+                        <input type="email" name="" id="correo">
+                    </div>
+                    
+                    <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" name="" id="contrasena">
+                    </div>
+    
+                    <div>
+                        <input type="submit" value="Log In">
+                    </div>
+                    
+                </form>
+    
+            </div>
+    
+        </article>
+        <%- include('partials/footer') %>
+        
+    </body>
+</html>

@@ -1,0 +1,507 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+main section {
+    height: 100%;
+    background-color: #222222;
+    position: relative;
+    width: 100%;
+    color: white;
+    margin-top: 22px;
+    padding: 10px;
+}
+
+
+.logo{
+    text-align: center;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.logo img{
+    width: 40vw;
+}
+
+.nombre{
+    width: 100%;
+    height: 20px;
+    background-color: #222222;
+    text-align: center;
+    color:white;
+    font-size: 24;
+    display: none;
+    
+}
+
+.low-main-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+.form i{
+    margin-right: 4px;
+}
+
+.banner{
+    text-align: center;
+    background-color: white;
+    
+}
+
+.imagen{
+    height: 100%;
+    width: 100%;
+    max-width: 1080px;
+    object-fit: contain;
+}
+
+.input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+.header nav{
+    background-color: #222222;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+
+.nav-bar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    padding: 5px 0px;
+    justify-content: space-around;
+    
+}
+
+
+
+.hamburguesa{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;   
+}
+
+.carrito{
+    color: white;
+    font-size: 18px;
+}
+
+
+.articulo{
+    padding: 20px
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor #img{
+    width: 100%;
+}
+
+.contenedor .scroll{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.contenedor .scroll img{
+    max-height: 100%;
+}
+
+.descripcion h2{
+    margin-bottom: 0px;
+}
+
+.descripcion #disponible{
+    color: greenyellow;
+    margin-top: 0px;
+}
+
+.similares p{
+    margin: 0px;
+    padding: 10px;
+    border: black 2px solid;
+    background-color: rgb(130, 130, 247);
+    border-radius: 7px;
+    width: 90px;
+}
+
+.similares{
+    display: none;
+    margin: 0px;
+}
+
+.descripcion .boton{
+    align-items: center;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registro{
+    margin: 10%;
+    border: solid 2px black;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+
+}
+
+.registro p{
+    border-bottom: solid 2px black;
+    text-align: center;
+}
+
+.login{
+    margin: 10%;
+    border: solid 2px black;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+
+}
+
+.login p{
+    border-bottom: solid 2px black;
+    text-align: center;
+}
+
+main section article img {
+    width: 150px;
+}
+
+.burger-menu i{
+    font-size: 20px;
+}
+
+.products {
+    display: flex;
+    margin-top: 25px;
+    padding: 0 10px
+}
+
+.main-article{
+    padding: 0 5px;
+}
+
+.description{
+    padding: 10px 0;
+}
+
+.stock{
+    color: rgb(17, 233, 6);
+    display: none;
+}
+
+.edit-products{
+    display: flex;
+    margin-left: 45px;
+}
+
+.edit-products i{
+    font-size: 16px;
+}
+
+article span.quantity{
+    border: 1px solid black;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+.trash-can, 
+.plus{
+    padding: 4px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+}
+
+.delivery p{
+    border-bottom: 1px solid gray;
+    padding: 5px 10px;
+}
+
+.delivery h4{
+    padding: 5px 10px;
+}
+
+.purchase-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.purchase-button button{
+    width: 75vw;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    height: 25px;
+}
+
+main.principales{
+    margin-top: 22px;
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    background-color: #222222;
+    color: white;
+    width: 100%;
+}
+
+.footer div{
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.footer h1{
+    font-size:18px;
+    padding-top: 20px
+}
+
+.footer a{
+    color:white
+}
+.titulo-carrito{
+    padding: 10px;
+    border: 1px solid gray;
+    display: none;
+}
+
+@media(min-width:600px){
+    .contenedor{
+        flex-direction: row;
+    }
+
+    .contenedor .scroll{
+        order: -1;
+        flex-direction: column;
+        width: 15%;
+    }
+
+    .contenedor .scroll img{
+        width: 100%;
+    }
+
+    .contenedor #img{
+        width: 60%;
+    }
+
+    .contenedor .descripcion{
+        width: 25%;
+    }
+
+    .similares{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .register{
+        display: flex;
+        flex-direction: row;
+    }
+}
+    
+
+@media (min-width: 769px){
+    
+    header section div.main-bar{
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main section {
+    width: 85%;
+    margin-left: 7%;
+    height: 85%;
+    }
+
+    header section {
+        width: 85%;
+        margin-left: 5%;
+    }
+
+    .products{
+        position: relative;
+    }
+
+    .edit-products{
+        position: absolute;
+        top: 29%;
+        right: 15%
+    }
+
+    .price{
+        position: absolute;
+        top: 43%;
+        right: 4%
+    }
+    
+    .description{
+        width: 30vw;
+    }
+
+    .stock{
+        display: block;
+    }
+
+    .logo{
+        border: none;
+    }
+
+    .logo img{
+        width: 25vw;
+    }
+
+    .input{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 36%;
+        width: 42vw;
+        height: 5vh;
+        align-items: center;
+        border: 1px solid gray;
+    }
+
+    .cart{
+        font-size: 2rem;
+        position: absolute;
+        right: -2%;
+        top: 50%;
+    }
+
+    .low-main-bar{
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    .nombre{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 3%;
+        width: 22vw;
+        font-size: 11px;
+    }
+
+    .lema{
+        display: flex;
+        align-items: center;
+    }
+
+    .options{
+     border-bottom: none;
+     border-top: none;
+     justify-content: flex-end;
+     position: absolute;
+     top: 45%;
+     left: 165px;
+    }
+
+    .more{
+        padding: 0 30px;
+    }
+
+    .delivery p{
+        border-bottom: none;
+        border-top: 1px solid gray;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    .delivery h4{
+        text-align: right;
+    }
+
+    .purchase-button{
+        justify-content: flex-end;
+    }
+
+    .purchase-button button{
+        width: 16vw;
+        height: 4vh;
+        border: 1px solid white;
+        margin-right: 10px;
+    }
+
+    h2{
+        display: block;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .articulo{
+        max-width: 1000px;
+        margin: auto;
+        border-top: solid 1px #222222;;
+        border-left: solid 1px #222222;
+        border-right: solid 1px #222222;
+        margin-top: 20px
+    }
+    .register{
+        max-width: 1000px;
+        margin: auto;
+        border-left: solid 1px #222222;
+        border-right: solid 1px #222222;
+        border-top: solid 1px #222222;
+        margin-top: 22px;
+    }
+   
+}
