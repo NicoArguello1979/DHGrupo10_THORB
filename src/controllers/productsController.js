@@ -12,6 +12,10 @@ const controller = {
 		res.render('producto');
 	},
 
+	productCart:(req, res) => {
+		res.render('productCart');
+	},
+
 	
 };
 

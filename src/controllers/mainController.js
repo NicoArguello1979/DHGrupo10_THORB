@@ -18,12 +18,8 @@ const controller = {
 
 		res.render("results", { productos: resultado, search: search});
 	},
-	producto: (req, res) => {
-		res.render('producto');
-	},
-	login: (req, res) => {
-		res.render('login');
-	},
+	
+	
 };
 
 module.exports = controller;

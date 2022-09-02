@@ -26,15 +26,15 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const mainRouter = require('./routes/main'); // Rutas main
-//const productoRouter = require('./routes/producto'); // Rutas /products
-//const usuarioRouter = require('./routes/usuario')
+const productoRouter = require('./routes/producto'); // Rutas /products
+const usuarioRouter = require('./routes/usuario')
 
 app.use('/', mainRouter);
 //app.use('/listadoProducto', productoRouter);
-app.use('/producto', mainRouter);
-//app.use('/cargaProducto', productoRouter);
+app.use('/producto', productoRouter);
+//app.use('/productCart', productoRouter);
 
-app.use('/login', mainRouter);
+app.use('/login', usuarioRouter);
 
 
 
