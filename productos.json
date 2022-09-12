@@ -1,0 +1,81 @@
+[{
+    "id": 1,
+    "name": "disco 2",
+    "description": "bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque",
+    "image": "imagen 4",
+    "category": "usado",
+    "type": "mas-vendido",
+    "price": 3003.13
+  }, {
+    "id": 2,
+    "name": "remera 1",
+    "description": "ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
+    "image": "imagen 5",
+    "category": "en oferta",
+    "type": "nuevo",
+    "price": 3230.42
+  }, {
+    "id": 3,
+    "name": "longplay 2",
+    "description": "dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo",
+    "image": "imagen 5",
+    "category": "usado",
+    "type": "banner",
+    "price": 2791.6
+  }, {
+    "id": 4,
+    "name": "disco 3",
+    "description": "ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend",
+    "image": "imagen 8",
+    "category": "en oferta",
+    "type": "nuevo",
+    "price": 1114.67
+  }, {
+    "id": 5,
+    "name": "gorra 1",
+    "description": "tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla",
+    "image": "imagen 9",
+    "category": "usado",
+    "type": "mas-vendido",
+    "price": 3175.97
+  }, {
+    "id": 6,
+    "name": "longplay 3",
+    "description": "ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat",
+    "image": "imagen 9",
+    "category": "en oferta",
+    "type": "mas-vendido",
+    "price": 2489.93
+  }, {
+    "id": 7,
+    "name": "remera 2",
+    "description": "quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare",
+    "image": "imagen 1",
+    "category": "musica",
+    "type": "mas-vendido",
+    "price": 1461.59
+  }, {
+    "id": 8,
+    "name": "remera 1",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi",
+    "image": "imagen 6",
+    "category": "merchandising",
+    "type": "banner",
+    "price": 4362.16
+  }, {
+    "id": 9,
+    "name": "disco 2",
+    "description": "mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet",
+    "image": "imagen 5",
+    "category": "musica",
+    "type": "banner",
+    "price": 4914.87
+  }, {
+    "id": 10,
+    "name": "disco 3",
+    "description": "blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam",
+    "image": "imagen 10",
+    "category": "usado",
+    "type": "mas-vendido",
+    "price": 2789.48
+  }]

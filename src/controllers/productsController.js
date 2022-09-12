@@ -16,6 +16,14 @@ const controller = {
 		res.render('productCart');
 	},
 
+	crearProducto: (req, res) => {
+		res.render('product-create-form')
+	},
+
+	editarProducto: (req, res) => {
+		res.render('product-edit-form')
+	}, 
+
 	
 };
 

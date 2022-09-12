@@ -8,5 +8,7 @@ const productsController = require('../controllers/productsController');
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.producto); 
 router.get('/productCart', productsController.productCart); 
+router.get('/crearproducto', productsController.crearProducto)
+router.get('/editarproducto', productsController.editarProducto)
 
 module.exports = router;
