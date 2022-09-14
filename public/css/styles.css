@@ -348,7 +348,35 @@ main.principales{
         flex-direction: row;
     }
 }
-    
+
+.container-products{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-label{
+    display: block;
+}
+
+.product-box_image img {
+    width: 30vw;
+}
+
+h2.products-title {
+    margin-left: 7vw;
+    margin-top: 20px;
+}
+
+.product-box a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+}
+
+article.description{
+    margin-left: 20px;
+
+}
 
 @media (min-width: 769px){
     

@@ -26,7 +26,24 @@ const controller = {
 
 	editarProducto: (req, res) => {
 		res.render('product-edit-form')
-	}, 
+	},
+	
+	idProduct: (req, res) => {
+		const productos =  JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		const producto = productos.find((p)=> p.id == req.params.id);
+		res.render('detail', {producto: producto})
+	  },
+
+	  create: (req, res) => {
+		let creacionProductos = {
+			nombre: req.body.name,
+			precio: req.body.price,
+			descuento: req.body.discount,
+			categoria: req.body.category,
+			descripcion: req.body.description
+		}  
+		  res.redirect('/producto')
+	  }
 
 	
 };

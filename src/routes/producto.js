@@ -11,4 +11,6 @@ router.get('/productCart', productsController.productCart);
 router.get('/crearproducto', productsController.crearProducto)
 router.get('/editarproducto', productsController.editarProducto)
 router.get('/productosTodos', productsController.productosTodos)
+router.get('/:id', productsController.idProduct)
+router.post('/editarproducto', productsController.create)
 module.exports = router;
