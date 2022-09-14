@@ -314,6 +314,10 @@ main.principales{
     display: none;
 }
 
+article.product-box_data {
+    margin-left: 20px;
+}
+
 @media(min-width:600px){
     .contenedor{
         flex-direction: row;

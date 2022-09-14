@@ -34,18 +34,13 @@ const controller = {
 		res.render('detail', {producto: producto})
 	  },
 
-	  create: (req, res) => {
-		let creacionProductos = {
-			nombre: req.body.name,
-			precio: req.body.price,
-			descuento: req.body.discount,
-			categoria: req.body.category,
-			descripcion: req.body.description
-		}  
-		  res.redirect('/producto')
-	  }
+	  store: (req, res) => {
+		console.log(req.body);
+		res.redirect('/producto')
+	}  
+};
 
 	
-};
+
 
 module.exports = controller;
