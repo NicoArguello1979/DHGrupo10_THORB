@@ -28,6 +28,9 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 const mainRouter = require('./routes/main'); // Rutas main
 const productoRouter = require('./routes/producto'); // Rutas /products
 const usuarioRouter = require('./routes/usuario')
+const session = require('express-session');
+
+app.use(session({secret: 'Secreto'}));
 
 app.use('/', mainRouter);
 //app.use('/listadoProducto', productoRouter);
