@@ -7,7 +7,7 @@ const storage = multer.diskStorage({
 
     },
     filename: (req, file, cb) => {
-        let fileName = '${Date.now()}_img${path.extname(file.originalname)}'; //ver comillas porque esta mal copiado - video minuto 32.39
+        let fileName = `${Date.now()}_img${path.extname(file.originalname)}`; //ver comillas porque esta mal copiado - video minuto 32.39
         cb(null, fileName);
 
     }

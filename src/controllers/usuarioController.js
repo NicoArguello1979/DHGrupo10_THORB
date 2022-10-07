@@ -14,7 +14,7 @@ const { ResultWithContext } = require('express-validator/src/chain');
 const controller = {
 	// Root - Show all products
 	register: (req, res) => {
-		return res.render('register');
+		res.render('register');
 	},
 	processRegister: (req, res)=> {
 		const resultValidation = validationResult(req);

@@ -36,7 +36,7 @@ app.use('/', mainRouter);
 //app.use('/listadoProducto', productoRouter);
 app.use('/producto', productoRouter);
 //app.use('/productCart', productoRouter);
-
+app.use('/register', usuarioRouter);
 app.use('/login', usuarioRouter);
 
 
