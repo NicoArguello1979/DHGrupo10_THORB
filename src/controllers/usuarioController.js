@@ -53,18 +53,47 @@ const controller = {
 	},
 	loginProcess: (req, res) => {
 		let userToLogin = user.findByField('email', req.body.email);
-		if (userToLogin){
+		
+		
+		if (userToLogin.password ){
+			let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password)
+			if(isOkPassword){
+				delete userToLogin.password;
+				req.session.userLogged = userToLogin;
+				return res.redirect('user/profile');
+			}
 
 		}
 		return res.render('login', {
 			errors: {
+				email:{
+				msg: 'La contraseña es incorrecta'
+			}
+		}
+	});
+	}
+		return res.render('login', {
+			errors: {
+				email:{
 				msg: 'Usuario no encontrado'
 			}
-		});
+		}
+	});
 	},
+	perfil: (req, res) => {
+		return res.render('perfil', {
+			user: req.session.userLogged
+		});
+
+
+	},
+	logout: (res, res) => {
+		req.session.destroy();
+		return res.redirect('/');
+	}
 
 
 	
-};
+}
 
 module.exports = controller;

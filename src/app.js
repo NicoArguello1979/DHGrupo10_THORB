@@ -2,6 +2,7 @@
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const express = require('express');
+
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
@@ -30,7 +31,12 @@ const productoRouter = require('./routes/producto'); // Rutas /products
 const usuarioRouter = require('./routes/usuario')
 const session = require('express-session');
 
-app.use(session({secret: 'Secreto'}));
+app.use(session({
+  secret: 'Secreto',
+  resave: false,
+  saveUninitialized: false,
+
+}));
 
 app.use('/', mainRouter);
 //app.use('/listadoProducto', productoRouter);
@@ -38,6 +44,7 @@ app.use('/producto', productoRouter);
 //app.use('/productCart', productoRouter);
 app.use('/register', usuarioRouter);
 app.use('/login', usuarioRouter);
+app.use('/perfil', usuarioRouter);
 
 
 
