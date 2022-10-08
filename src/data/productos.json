@@ -1,81 +1,108 @@
-[{
-    "id": 1,
-    "name": "vinilo_1",
-    "description": "En 2015 lanzaron su álbum debut, Usted Señalemelo, con el cual hicieron giras por Chile y llegaron a los escenarios porteños con el auspicio de Massacre. De ese trabajo, su canción “Agua marfil” adquirió particular popularidad",
-    "image": "musica_1.jpg",
-    "category": "musica",
-    "type": "nuevo",
-    "price": 3003.13
-  }, {
-    "id": 2,
-    "name": "remera_1",
-    "description": "Federico Aubele - The Holographic Moon T-Shirt",
-    "image": "remera_1.png",
-    "category": "indumentaria",
-    "type": "nuevo",
-    "price": 3230.42
-  }, {
-    "id": 3,
-    "name": "gorra_1",
-    "description": "Cielo Razzo - Gorra Trucker Camionera Lisa Sublimable Calidad Premium Variedad Visera Curva Regulador Plástico Doble",
-    "image": "gorra_1.jpg",
-    "category": "gorra",
-    "type": "nuevo",
-    "price": 2791.6
-  }, {
-    "id": 4,
-    "name": "vinilo_2",
-    "description": "AZUL SCHENQUERMAN - Catarsis disco debut de la cantante argentina Azul Schenquerman, cuenta con 12 temas propios y 1 remix",
-    "image": "musica_2.jpg",
-    "category": "musica",
-    "type": "nuevo",
-    "price": 1114.67
-  }, {
-    "id": 5,
-    "name": "vinilo_3",
-    "description": "Los Subtitulos - Después de sus singles adelanto “Muerto” y “Pulmón de manzana”, la banda indie-alt bonaerense, lanza su primer trabajo titulado “Espectador entra a escena”, un conjunto de 9 canciones de melodías pegadizas y sonoridad dreamy",
-    "image": "musica_3.jpg",
-    "category": "musica",
-    "type": "nuevo",
-    "price": 3175.97
-  }, {
-    "id": 6,
-    "name": "vinilo_4",
-    "description": "Alejo y Valentin - Cuatro años después de su álbum debut, la dupla mendocina expande su sonido en estas siete canciones co-producidas por Mario Breuer",
-    "image": "musica_4.jpg",
-    "category": "musica",
-    "type": "nuevo",
-    "price": 2489.93
-  }, {
-    "id": 7,
-    "name": "gorra_2",
-    "description": "Babasonicos - Gorra Trucker",
-    "image": "gorra_2.jpg",
-    "category": "gorra",
-    "type": "usado",
-    "price": 1461.59
-  }, {
-    "id": 8,
-    "name": "remera_2",
-    "description": "Lido Pimienta - T-SHIRT - AMOR ABUNDANTE/ABUNDANT LOVE",
-    "image": "remera_2.jpg",
-    "category": "indumentaria",
-    "type": "nuevo",
-    "price": 4362.16
-  }, {
-    "id": 9,
-    "name": "remera_3",
-    "description": "Os Mutantes - T Shirt de la banda brasilera Os Mutantes, uno de los grupos más dinámicos ,talentosos y radicales de la época psicodélica. Un trío de músicos experimentales, la banda innovó en el uso del acople, distorsión y trucos del estudio de todos los tipos",
-    "image": "remera_3.jpg",
-    "category": "indumentaria",
-    "type": "nuevo",
-    "price": 4914.87
-  }, {
-    "id": 10,
-    "name": "remera_4",
-    "description": "Woven hand - T shirt Refractory Obdurate",
-    "image": "remera_4.jpg",
-    "category": "indumentaria",
-    "type": "nuevo",
-    "price": 2789.48
-  }]
+[
+ {
+  "id": 1,
+  "name": "vinilo_1",
+  "description": "En 2015 lanzaron su álbum debut, Usted Señalemelo, con el cual hicieron giras por Chile y llegaron a los escenarios porteños con el auspicio de Massacre. De ese trabajo, su canción “Agua marfil” adquirió particular popularidad",
+  "image": "musica_1.jpg",
+  "category": "musica",
+  "type": "nuevo",
+  "price": 3003.13
+ },
+ {
+  "id": 2,
+  "name": "remera_1",
+  "description": "Federico Aubele - The Holographic Moon T-Shirt",
+  "image": "remera_1.png",
+  "category": "indumentaria",
+  "type": "nuevo",
+  "price": 3230.42
+ },
+ {
+  "id": 3,
+  "name": "gorra_1",
+  "description": "Cielo Razzo - Gorra Trucker Camionera Lisa Sublimable Calidad Premium Variedad Visera Curva Regulador Plástico Doble",
+  "image": "gorra_1.jpg",
+  "category": "gorra",
+  "type": "nuevo",
+  "price": 2791.6
+ },
+ {
+  "id": 4,
+  "name": "vinilo_2",
+  "description": "AZUL SCHENQUERMAN - Catarsis disco debut de la cantante argentina Azul Schenquerman, cuenta con 12 temas propios y 1 remix",
+  "image": "musica_2.jpg",
+  "category": "musica",
+  "type": "nuevo",
+  "price": 1114.67
+ },
+ {
+  "id": 5,
+  "name": "vinilo_3",
+  "description": "Los Subtitulos - Después de sus singles adelanto “Muerto” y “Pulmón de manzana”, la banda indie-alt bonaerense, lanza su primer trabajo titulado “Espectador entra a escena”, un conjunto de 9 canciones de melodías pegadizas y sonoridad dreamy",
+  "image": "musica_3.jpg",
+  "category": "musica",
+  "type": "nuevo",
+  "price": 3175.97
+ },
+ {
+  "id": 6,
+  "name": "vinilo_4",
+  "description": "Alejo y Valentin - Cuatro años después de su álbum debut, la dupla mendocina expande su sonido en estas siete canciones co-producidas por Mario Breuer",
+  "image": "musica_4.jpg",
+  "category": "musica",
+  "type": "nuevo",
+  "price": 2489.93
+ },
+ {
+  "id": 7,
+  "name": "gorra_2",
+  "description": "Babasonicos - Gorra Trucker",
+  "image": "gorra_2.jpg",
+  "category": "gorra",
+  "type": "usado",
+  "price": 1461.59
+ },
+ {
+  "id": 8,
+  "name": "remera_2",
+  "description": "Lido Pimienta - T-SHIRT - AMOR ABUNDANTE/ABUNDANT LOVE",
+  "image": "remera_2.jpg",
+  "category": "indumentaria",
+  "type": "nuevo",
+  "price": 4362.16
+ },
+ {
+  "id": 9,
+  "name": "remera_3",
+  "description": "Os Mutantes - T Shirt de la banda brasilera Os Mutantes, uno de los grupos más dinámicos ,talentosos y radicales de la época psicodélica. Un trío de músicos experimentales, la banda innovó en el uso del acople, distorsión y trucos del estudio de todos los tipos",
+  "image": "remera_3.jpg",
+  "category": "indumentaria",
+  "type": "nuevo",
+  "price": 4914.87
+ },
+ {
+  "id": 10,
+  "name": "remera_4",
+  "description": "Woven hand - T shirt Refractory Obdurate",
+  "image": "remera_4.jpg",
+  "category": "indumentaria",
+  "type": "nuevo",
+  "price": 2789.48
+ },
+ {
+  "id": 1665269734076,
+  "name": "toto",
+  "descripcion": "daleee",
+  "imagen": "default-image.jpeg",
+  "categoria": "visited",
+  "precio": "452"
+ },
+ {
+  "id": 1665270323128,
+  "name": "2 intento",
+  "description": "ahora si",
+  "image": "default-image.jpeg",
+  "category": "visited",
+  "price": "3222"
+ }
+]

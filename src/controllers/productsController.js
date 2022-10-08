@@ -13,7 +13,7 @@ const controller = {
 	},
 	productosTodos: (req, res) => {
 		const productos = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-		res.render('productosTodos' ,{ productos: productos, toThousand });
+		res.render('productosTodos' ,{ productos: productos });
 	},
 
 	productCart:(req, res) => {
@@ -25,7 +25,9 @@ const controller = {
 	},
 
 	editarProducto: (req, res) => {
-		res.render('product-edit-form')
+		const productos =  JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		const producto = productos.find((p)=> p.id == req.params.id);
+		res.render('product-edit-form', {productToEdit: producto })
 	},
 	
 	idProduct: (req, res) => {
@@ -35,8 +37,23 @@ const controller = {
 	  },
 
 	  store: (req, res) => {
-		console.log(req.body);
-		res.redirect('/producto')
+		const productos =  JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+		  const productoNuevo = {
+			  id: Date.now(),
+			  name: req.body.name,
+			  description: req.body.description,
+			  image: 'default-image.jpeg',
+			  category: req.body.category,
+			  type: req.body.type,
+			  price: req.body.price,
+		  }
+
+		  productos.push(productoNuevo)
+		  const data = JSON.stringify(productos, null, ' ');
+		  fs.writeFileSync(productsFilePath, data);
+		
+		res.redirect('/producto/productosTodos')
 	}  
 };
 

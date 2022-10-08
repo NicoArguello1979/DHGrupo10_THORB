@@ -23,6 +23,12 @@
                                         <p><%= producto.name %></p>
                                         <p><%= producto.description %></p>
                                     </article>
+                                    <a href="#" class="buy-button">Comprar</a>
+
+                                    <a href="/producto/edit/<%= producto.id %>" class="edit-button">Editar producto</a>
+                                    <form action="/producto/delete/id?_method=DELETE" method="POST">
+                                        <button type="submit" class="delete-button">Eliminar</button>
+                                    </form>
                                 </a>
                             </section>
                         </div>

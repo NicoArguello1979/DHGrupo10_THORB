@@ -8,9 +8,12 @@ const productsController = require('../controllers/productsController');
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.producto); 
 router.get('/productCart', productsController.productCart); 
-router.get('/crearproducto', productsController.crearProducto)
-router.get('/editarproducto', productsController.editarProducto)
+router.get('/crear', productsController.crearProducto)
+router.post('/crear', productsController.store)
+router.get('/edit/:id', productsController.editarProducto)
+//router.put('/:id', productsController.update)
 router.get('/productosTodos', productsController.productosTodos)
-router.get('/:id', productsController.idProduct)
-router.post('/create', productsController.store)
+//router.delete('/:id', productsController.destroy)
+router.get('/detail/:id', productsController.idProduct) //fijarse de poner el url asi: /detail/:id
+
 module.exports = router;
