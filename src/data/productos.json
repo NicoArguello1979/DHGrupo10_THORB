@@ -90,19 +90,21 @@
   "price": 2789.48
  },
  {
-  "id": 1665269734076,
-  "name": "toto",
-  "descripcion": "daleee",
-  "imagen": "default-image.jpeg",
-  "categoria": "visited",
-  "precio": "452"
+  "id": 1665359643504,
+  "name": "hola 123",
+  "description": "aohala 2213\"",
+  "image": "default-image.jpeg",
+  "category": "Musica",
+  "type": "Nuevo",
+  "price": "1000"
  },
  {
-  "id": 1665270323128,
-  "name": "2 intento",
-  "description": "ahora si",
-  "image": "default-image.jpeg",
-  "category": "visited",
-  "price": "3222"
+  "id": 1665365579370,
+  "image": "1665366397621cuentito.jpg",
+  "name": "IGOR",
+  "description": "\"This is a new, unopened CD in its original packaging.\"",
+  "category": "Musica",
+  "type": "Nuevo",
+  "price": "6500"
  }
 ]

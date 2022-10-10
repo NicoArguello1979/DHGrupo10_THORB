@@ -47,6 +47,9 @@ const controller = {
 			  category: req.body.category,
 			  type: req.body.type,
 			  price: req.body.price,
+		  };
+		  if(req.file) {
+			  productoNuevo.image = req.file.filename;
 		  }
 
 		  productos.push(productoNuevo)
@@ -54,7 +57,38 @@ const controller = {
 		  fs.writeFileSync(productsFilePath, data);
 		
 		res.redirect('/producto/productosTodos')
-	}  
+	},
+	
+	destroy: (req, res) => {
+		let productos =  JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		productos = productos.filter((p)=> p.id != req.params.id);
+		
+		const data = JSON.stringify(productos, null, ' ');
+		fs.writeFileSync(productsFilePath, data);
+		res.redirect('/producto/productosTodos')
+	},
+
+	update: (req, res) => {
+		const productos =  JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+		productos.forEach((p) =>{
+			if(p.id == req.params.id) {
+				p.name = req.body.name;
+				p.description = req.body.description;
+				p.category = req.body.category;
+				p.type = req.body.type;
+				p.price = req.body.price
+				
+				if(req.file) {
+					p.image = req.file.filename
+				}
+
+			}
+		});
+		const data = JSON.stringify(productos, null, ' ');
+		fs.writeFileSync(productsFilePath, data); 
+
+		res.redirect('/producto/detail/' + req.params.id)
+	}
 };
 
 	
