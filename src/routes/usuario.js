@@ -2,6 +2,8 @@
 const express = require('express');
 const router = express.Router();
 
+
+
 // ************ Controller Require ************
 const usuarioController = require('../controllers/usuarioController');
 const uploadFile = require ('../middlewares/multerMiddleware');
@@ -16,10 +18,10 @@ router.post('/register', uploadFile.single('avatar'), validations, usuarioContro
 
 router.get('/', usuarioController.login); 
 router.get('/login', guestMiddleware, usuarioController.login); 
-router.post('/login', usuarioController.loginProcess);
+//router.post('/login', usuarioController.loginProcess);
 
-router.get('/', usuarioController.perfil);
-router.get('/logout', usuarioController.logout);
-router.post('/perfil/',authMiddleware, usuarioController.perfil);
+// router.get('/', usuarioController.perfil);
+// router.get('/logout', usuarioController.logout);
+// router.post('/perfil/',authMiddleware, usuarioController.perfil);
 
 module.exports = router;

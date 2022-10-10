@@ -11,6 +11,32 @@ const { ResultWithContext } = require('express-validator/src/chain');
 
 //const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+
+// const controller = {
+// 	register: (req, res) => {
+// 	return res.render('register');
+
+// },
+// 	processRegister: (req, res) => {
+// 	return res.send('req.body');
+
+// },
+// 	login: (req, res) => {
+// 	return res.render('login');
+
+// },
+// profile: (req, res) => {
+// 	return res.render('perfil');
+
+// },
+// }
+
+
+
+
+
+
+
 const controller = {
 	// Root - Show all products
 	register: (req, res) => {
@@ -60,7 +86,7 @@ const controller = {
 			if(isOkPassword){
 				delete userToLogin.password;
 				req.session.userLogged = userToLogin;
-				return res.redirect('user/profile');
+				return res.redirect('user/perfil');
 			}
 
 		}
@@ -68,14 +94,6 @@ const controller = {
 			errors: {
 				email:{
 				msg: 'La contraseña es incorrecta'
-			}
-		}
-	});
-	}
-		return res.render('login', {
-			errors: {
-				email:{
-				msg: 'Usuario no encontrado'
 			}
 		}
 	});
@@ -87,7 +105,7 @@ const controller = {
 
 
 	},
-	logout: (res, res) => {
+	logout: (req, res) => {
 		req.session.destroy();
 		return res.redirect('/');
 	}
