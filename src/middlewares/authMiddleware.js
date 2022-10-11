@@ -8,4 +8,4 @@
 
 // module.exports = authtMiddleware;
 
-//si tengo a alguien en sesion lo dejo logueado
+// si tengo a alguien en sesion lo dejo logueado
