@@ -59,6 +59,14 @@ main section {
     
 }
 
+.opciones-principales {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: 1px solid black;
+    margin-left: 24px;
+}
+
 .imagen{
     height: 100%;
     width: 100%;
@@ -316,6 +324,22 @@ main.principales{
 
 article.product-box_data {
     margin-left: 20px;
+}
+
+.options1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    
+}
+
+.options1 a {
+    margin-right: 30px;
+}
+
+
+.options1 form {
+    margin-right: 30px;
 }
 
 @media(min-width:600px){
