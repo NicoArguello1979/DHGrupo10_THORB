@@ -17,7 +17,7 @@ router.post('/register', usuarioController.register);
 router.post('/register', uploadFile.single('avatar'), validations, usuarioController.processRegister);
 //router.post('/perfil', usuarioController.perfil);
 
-router.get('/', usuarioController.login); 
+//router.get('/login', usuarioController.login); 
 router.get('/login', guestMiddleware, usuarioController.login); 
 //router.post('/login', usuarioController.loginProcess);
 

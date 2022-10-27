@@ -47,11 +47,11 @@
  {
   "id": 6,
   "name": "vinilo_4",
-  "description": "Alejo y Valentin - Cuatro años después de su álbum debut, la dupla mendocina expande su sonido en estas siete canciones co-producidas por Mario Breuer",
-  "image": "musica_4.jpg",
-  "category": "musica",
-  "type": "nuevo",
-  "price": 2489.93
+  "description": "Alejo y Valentin - Cuatro años después de su álbum debut, la dupla mendocina expande su sonido en estas siete canciones co-producidas por Mario Breuer\"",
+  "image": "1665542936007default-image.jpeg",
+  "category": "",
+  "type": "",
+  "price": "2489.93"
  },
  {
   "id": 7,

@@ -45,7 +45,7 @@ app.use('/producto', productoRouter);
 app.use('/register', usuarioRouter);
 app.use('/login', usuarioRouter);
 app.use('/perfil', usuarioRouter);
-
+//app.use('/users', usuarioRouter);
 
 
 // ************ DON'T TOUCH FROM HERE ************

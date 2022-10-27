@@ -66,6 +66,7 @@ const controller = {
 		const data = JSON.stringify(productos, null, ' ');
 		fs.writeFileSync(productsFilePath, data);
 		res.redirect('/producto/productosTodos')
+		//eliminar imagen 
 	},
 
 	update: (req, res) => {
