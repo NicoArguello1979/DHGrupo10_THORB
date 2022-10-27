@@ -11,7 +11,7 @@ const validations = require ('../middlewares/validateRegisterMiddleware');
 const guestMiddleware = require ('../middlewares/guestMiddleware');
 const authMiddleware = require ('../middlewares/authMiddleware');
 
-router.get('/', usuarioController.register); 
+
 router.get('/register', guestMiddleware, usuarioController.register); 
 router.post('/register', usuarioController.register);
 router.post('/register', uploadFile.single('avatar'), validations, usuarioController.processRegister);
