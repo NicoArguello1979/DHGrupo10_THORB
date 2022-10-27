@@ -75,6 +75,7 @@ const controller = {
 	},
 
 	login: (req, res) => {
+		console.log('aca estamos')
 		res.render('login');
 	},
 	loginProcess: (req, res) => {
