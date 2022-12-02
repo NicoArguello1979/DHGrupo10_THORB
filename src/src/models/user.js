@@ -1,11 +1,10 @@
 const fs = require ('fs');
-const path = require('path');
+
 const user = {
-    fileName: '../data/usuarios.json', 
+    fileName: 'src/data/usuarios.json',
 
     getData: function () {
-        let usuarioFilePath = path.join(__dirname, '../data/usuarios.json');
-        return JSON.parse(fs.readFileSync(usuarioFilePath, 'utf-8'));  
+        return JSON.parse(fs.readFileSync(this.fileName));
     },
 
     generateId: function(){

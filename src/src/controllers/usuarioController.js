@@ -45,14 +45,14 @@ const controller = {
 	processRegister: (req, res)=> {
 		const resultValidation = validationResult(req);
 		if (resultValidation.errors.lenght > 0){
-			return res.render('registro', { 
+			return res.render('register', { 
 				errors: resultValidation.mapped(),
 				oldData: req.body
 			});
 		}
 		let userInDB = user.findByField('email', req.body.email);
 		if (userInDB) {
-			return res.render('registro', { 
+			return res.render('register', { 
 				errors: {
 					email: {
 						msg: 'Este mail ya esta registrado'
@@ -63,23 +63,22 @@ const controller = {
 
 		}
 		
-		console.log('hola')
+
 		let userToCreate = {
 			...req.body,
-		
 			password: bcryptjs.hashSync(req.body.password, 10),
 			avatar: req.file.filename
 		}
 
 		user.create(userToCreate);
-		return res.redirect('/user/login');
+		return res.redirect('/login');
 	},
 
 	login: (req, res) => {
-		console.log('aca estamos')
 		res.render('login');
 	},
 	loginProcess: (req, res) => {
+		console.log("logueando al usuario " + req.body.email);
 		let userToLogin = user.findByField('email', req.body.email);
 		
 		
