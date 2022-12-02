@@ -17,6 +17,7 @@ const upload = multer ({storage})
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
 
+console.log("estoy en producto");
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.producto); 
 router.get('/productCart', productsController.productCart); 

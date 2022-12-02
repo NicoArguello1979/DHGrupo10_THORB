@@ -4,6 +4,7 @@ function guestMiddleware (req, res, next) {
         return res.redirect('/perfil');
 
     }
+    console.log("estoy deslogueado");
     next();
 }
 

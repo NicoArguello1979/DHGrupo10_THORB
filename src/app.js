@@ -27,8 +27,8 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const mainRouter = require('./routes/main'); // Rutas main
-//const productoRouter = require('./routes/producto'); // Rutas /products
-//const usuarioRouter = require('./routes/usuario')
+const productoRouter = require('./routes/producto'); // Rutas /products
+const usuarioRouter = require('./routes/usuario')
 const session = require('express-session');
 
 app.use(session({
@@ -40,12 +40,12 @@ app.use(session({
 
 app.use('/', mainRouter);
 //app.use('/listadoProducto', productoRouter);
-//app.use('/producto', productoRouter);
+app.use('/producto', productoRouter);
 //app.use('/productCart', productoRouter);
-//app.use('/register', usuarioRouter);
-//app.use('/login', usuarioRouter);
-//app.use('/perfil', usuarioRouter);
-//app.use('/users', usuarioRouter);
+app.use('/register', usuarioRouter);
+app.use('/login', usuarioRouter);
+app.use('/perfil', usuarioRouter);
+app.use('/users', usuarioRouter);
 
 
 // ************ DON'T TOUCH FROM HERE ************

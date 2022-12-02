@@ -1,12 +1,11 @@
-function authtMiddleware (req, res, next) {
-    console.log('middle');
-    if (!req.session.userLogged){
-         return res.redirect('/login');
+// function authMiddleware (req, res, next) {
+//     if (!req.session.userLogged){
+//         return res.redirect('/login');
 
-     }
-     next();
- }
+//     }
+//     next();
+// }
 
- module.exports = authtMiddleware;
+// module.exports = authtMiddleware;
 
 // si tengo a alguien en sesion lo dejo logueado
